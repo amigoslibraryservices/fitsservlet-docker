@@ -24,6 +24,6 @@ jobs:
           uses: docker/build-push-action@v6      
           with:                                  
             context: .                     
-            platforms: linux/amd64, linux/arm64| 
+            platforms: linux/amd64, linux/arm64
             push: true                           
             tags: ${{ env.REGISTRY }}/${{ github.repository }}:1.6.0.servlet.2.1.0
